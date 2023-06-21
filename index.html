@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+
+       
         <title>Convertidor PDF</title>
     </head>
     <body>
@@ -12,23 +15,32 @@
                 <img src="src/Codepels.png" alt="img-Codepels" class="logo">
             </div>
         </header>
+
+
         <main>
-            <section class="title">
+            <section class="content-title">
                 <textarea name="title" id="title" cols="50" rows="1" placeholder="Enter a name for title"></textarea>
             </section>
-            <section class="content">
-                <textarea name="content" id="content" cols="80" rows="10" placeholder=" Here you can write the text"></textarea>
-                <div class="conversor">
-                    <button class="btn-conversorPdf">Transform to PDF</button>
+            <section class="content-description">
+                <textarea name="description" id="description" cols="80" rows="10" placeholder=" Here you can write the text"></textarea>
+                <div class="converter">
+                    <button class="btn-converterPdf" >Transform to PDF</button>
                 </div>
                 <div class="download">
-                    <button class="btn-downloadFile">Download File</button>
+                    <button class="btn-downloadFile" >Download File</button>
                 </div>
             </section>
+            <iframe src="" id="displayPdf"></iframe>
+
         </main>
+
+
+
         <footer>
             Developed by Andrés Vanegas
         </footer>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> <!-- new dist by the autor -->
         <script src="index.js"></script>
+
    </body>
     </html>
