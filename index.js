@@ -9,28 +9,26 @@ var title = document.querySelector("#title").value;
 var description = document.querySelector("#description").value;
 const framePdf = document.querySelector("#displayPdf");
 
-var visible = false;      // Flag variable (view pdf display)
+var visible = false;                             // Flag variable (view pdf display)
 
-//-- 
+//-- Function to convert text to pdf -- //
 function convertirAPdf(visible){
 
-    window.jsPDF = window.jspdf.jsPDF; //Allows define jsPDF - Library's author fixed compatibility -
+    window.jsPDF = window.jspdf.jsPDF;          //Allows define jsPDF - Library's author fixed compatibility -
 
-    var doc = new jsPDF('portrait');
-    doc.text (title,100,20, align="center"); //Los parámetros indican: texto a convertir, y posición del texto en el pdf (X y Y)
+    var doc = new jsPDF('portrait');            //The object is instantiated, the parameter is portrait for orientation of the doc
+    doc.text (title,100,20, align="center");    //The parameters are: text to convert and text position inside the pdf file (X and Y)
 
+    // -- style for the pdf file -- //
     const docWidth = doc.internal.pageSize.getWidth();
-    const splitDescription = doc.splitTextToSize(
-        description,
-        docWidth - 30
-      );
-      doc.text(splitDescription, 15, 40);
+    const splitDescription = doc.splitTextToSize(description, docWidth - 30);
+    doc.text(splitDescription, 15, 40);
 
-    if (visible == false){
-    doc.save(title+".pdf");
+    if (visible == false){                      //Validation of pdf download and/or display
+        doc.save(title+".pdf");
     }else{
         console.log('The pdf file was created');
-        framePdf.src = doc.output('bloburl');   //Carga la src a partir del objeto doc y su tipo output
+        framePdf.src = doc.output('bloburl');   //Load the src field of frame from the "doc" object and "output" feature.
     }
     
 }
