@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(#ededf0, #2a2d24);
+    
+}
+
+/* Header */
+header{
+    background: #0a0a0a;
+    padding: 2%;
+    height: 100px;
+}
+
+header img{
+    width: 200px;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-left: 300px;
+}
+
+.btn-converterPdf{
+    font-weight: bold;
+    background: linear-gradient(#e7dc09,#fcb900);
+    border-bottom: #fcb900;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.btn-converterPdf:hover{
+    transform: scale(1.05);
+    background: rgba(243, 178, 37, 0.8);
+}
+
+.btn-downloadFile:hover{
+    transform: scale(1.05);
+    background: rgba(243, 178, 37, 0.8);
+}
+
+.btn-downloadFile{
+    font-weight: bold;
+    background: linear-gradient(#e7dc09,#fcb900);
+    border-bottom: #fcb900;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+ /* Footer */
+footer{
+    padding: 20px;
+    background: #0a0a0a;
+    color: #fcb900;
+    height: 110px;
+}
+
+.f-image img{
+    width: 180px;
+    padding: 5px;
+    
+}
+
+.copyRight{
+    color: #ededf0;
+    text-align : center;
+    padding: 5px;
+}
+
+.copyRight img{
+    width: 20px;
+    border-radius: 10%;
+}
+
+.copyRight img:hover{
+    transform: scale(1.1);
+}
