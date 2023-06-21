@@ -24,10 +24,10 @@
             <section class="content-description">
                 <textarea name="description" id="description" cols="80" rows="10" placeholder=" Here you can write the text"></textarea>
                 <div class="converter">
-                    <button class="btn-converterPdf" >Transform to PDF</button>
+                    <button class="btn-converterPdf" onclick="convertirAPdf(visible = true)">Transform to PDF</button>
                 </div>
                 <div class="download">
-                    <button class="btn-downloadFile" >Download File</button>
+                    <button class="btn-downloadFile" onclick="convertirAPdf(visible = false)" >Download File</button>
                 </div>
             </section>
             <iframe src="" id="displayPdf"></iframe>
