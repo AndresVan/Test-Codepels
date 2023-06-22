@@ -17,29 +17,31 @@ header img{
 main{
     padding: 20px;
     width: 0 auto;
-    /* display: flex; */
+    display: flex;
 }
 
-.content-title{
-    margin-left: 5px;
-    width: 0px;
-    height: 10px;
+.lbl1 label{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 30px;
 }
+
+.lbl2 label{
+    text-align: left;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
 #title{
     background: #e7e3e2;
     border-radius: 5px;
     padding: 10px;
     outline-style:groove;
     width: 410px;
+    position: absolute;
+    margin-left: 10px;
+    
 
-}
-
-.content-description{
-    background: #2a2d24;
-    width: 0px;
-    margin-top: 100px;
-    margin-left: 1px;
-    height: 10px;
 }
 
 #description{
@@ -49,27 +51,16 @@ main{
     outline-style:groove;
     width: 410px;
     height: 200px;
+    margin-left: 10px;
+    margin-top: 70px;
 }
 
-
-
-
-
-
 /* Buttons */
-/* .box-buttons{
-    margin-left: 150px;
-    width: 400px;
-    display: flex;
-    background: #90663b;
-    padding: 20px;
-} */
-
 .buttons{
     padding: 20px;
-    background: #74903b;
     width: 300px;
-    margin-top: 350px;
+    margin-top: 30px;
+    margin-left: 200px;
 }
 
 .btn-converterPdf{
@@ -106,14 +97,6 @@ main{
 }
 
 /* Display iframe*/
-/* 
-.display{
-    background: #e7dc09;
-    margin-left: 600px;
-    display: flex;
-    
-} */
-
 #displayPdf{
     height: 450px;
     width: 800px;

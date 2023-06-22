@@ -21,15 +21,15 @@ Date: 21/06/2023 -->
 
 
         <main>
-            <section class="content-title">
-                <label>Title:</label>
+            <section>
+                <div class="lbl1">
+                <label>Document title:</label>
                 <textarea name="title" id="title" cols="50" rows="1" placeholder="Enter a name for title"></textarea>
-            </section>
-            <section class="content-description">
-                <label>Description:</label>
+                </div>
+                <div class="lbl2">
+                <label>Document text:</label>
                 <textarea name="description" id="description" cols="80" rows="10" placeholder="Here you can write the text"></textarea>
-            </section>
-            <section class="box-buttons">
+                </div>
                 <div class="buttons">
                     <button class="btn-converterPdf" onclick="convertirAPdf(visible = true)"> &#10158; Create PDF</button>
                     <button class="btn-downloadFile" onclick="convertirAPdf(visible = false)" >Download &#8659;</button>
