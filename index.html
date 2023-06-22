@@ -27,13 +27,18 @@ Date: 21/06/2023 -->
             </section>
             <section class="content-description">
                 <label>Description:</label>
-                <textarea name="description" id="description" cols="80" rows="10" placeholder="Here you can write the text">Description</textarea>
+                <textarea name="description" id="description" cols="80" rows="10" placeholder="Here you can write the text"></textarea>
+            </section>
+            <section class="box-buttons">
                 <div class="buttons">
                     <button class="btn-converterPdf" onclick="convertirAPdf(visible = true)"> &#10158; Create PDF</button>
                     <button class="btn-downloadFile" onclick="convertirAPdf(visible = false)" >Download &#8659;</button>
                 </div>
             </section>
-            <iframe src="" id="displayPdf"></iframe>
+            <section class="display">
+                <iframe src="" id="displayPdf"></iframe>
+            </section>
+            
 
         </main>
 

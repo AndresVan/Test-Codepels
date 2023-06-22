@@ -7,17 +7,69 @@ body{
 header{
     background: #0a0a0a;
     padding: 2%;
-    height: 100px;
+    height: 80px;
 }
 
 header img{
     width: 200px;
 }
 
+main{
+    padding: 20px;
+    width: 0 auto;
+    /* display: flex; */
+}
+
+.content-title{
+    margin-left: 5px;
+    width: 0px;
+    height: 10px;
+}
+#title{
+    background: #e7e3e2;
+    border-radius: 5px;
+    padding: 10px;
+    outline-style:groove;
+    width: 410px;
+
+}
+
+.content-description{
+    background: #2a2d24;
+    width: 0px;
+    margin-top: 100px;
+    margin-left: 1px;
+    height: 10px;
+}
+
+#description{
+    background: #e7e3e2;
+    border-radius: 5px;
+    padding: 10px;
+    outline-style:groove;
+    width: 410px;
+    height: 200px;
+}
+
+
+
+
+
+
 /* Buttons */
+/* .box-buttons{
+    margin-left: 150px;
+    width: 400px;
+    display: flex;
+    background: #90663b;
+    padding: 20px;
+} */
 
 .buttons{
-    margin-left: 300px;
+    padding: 20px;
+    background: #74903b;
+    width: 300px;
+    margin-top: 350px;
 }
 
 .btn-converterPdf{
@@ -26,9 +78,9 @@ header img{
     border-bottom: #fcb900;
     border-radius: 10px;
     padding: 10px;
-    width: 200px;
     text-align: center;
     cursor: pointer;
+
     
 }
 
@@ -48,9 +100,26 @@ header img{
     border-bottom: #fcb900;
     border-radius: 10px;
     padding: 10px;
-    width: 200px;
     text-align: center;
     cursor: pointer;
+    margin-left: 40px;
+}
+
+/* Display iframe*/
+/* 
+.display{
+    background: #e7dc09;
+    margin-left: 600px;
+    display: flex;
+    
+} */
+
+#displayPdf{
+    height: 450px;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 10px;
+    
 }
 
 
