@@ -28,11 +28,14 @@ Date: 21/06/2023 -->
                 </div>
                 <div class="lbl2">
                 <label>Document text:</label>
-                <textarea name="description" id="description" cols="80" rows="10" placeholder="Here you can write the text"></textarea>
+                <textarea name="description" id="description" cols="80" rows="10" placeholder="Write your text here"></textarea>
                 </div>
+                <div class="note">Note: <br>1. Fill fields (title and text) <br>2. Click on &#11118; <br>3. Click on Create PDF or Download</div>
                 <div class="buttons">
+                    <button class="btn-refresh" onclick="refresh()" >&#11118;</button>
                     <button class="btn-converterPdf" onclick="convertirAPdf(visible = true)"> &#10158; Create PDF</button>
                     <button class="btn-downloadFile" onclick="convertirAPdf(visible = false)" >Download &#8659;</button>
+                    
                 </div>
             </section>
             <section class="display">
@@ -60,8 +63,9 @@ Date: 21/06/2023 -->
                 <p>2023</p>
             </div>
         </footer>
-        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> <!-- new dist by the autor jsPDF -->
         <script src="index.js"></script>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> <!-- new dist by the autor jsPDF -->
+
 
    </body>
     </html>

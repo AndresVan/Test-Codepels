@@ -1,3 +1,9 @@
+/* 
+Project: Developer Technical test CODEPELS
+Developed by: Andrés Vanegas
+Date: 21/06/2023
+*/
+
 body{
     background: linear-gradient(#ededf0, #2a2d24);
     
@@ -55,6 +61,13 @@ main{
     margin-top: 70px;
 }
 
+.note{
+    margin-top: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: small;
+}
+
 /* Buttons */
 .buttons{
     padding: 20px;
@@ -62,6 +75,7 @@ main{
     margin-top: 30px;
     margin-left: 200px;
 }
+
 
 .btn-converterPdf{
     font-weight: bold;
@@ -71,6 +85,7 @@ main{
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    margin-left: 10px;
 
     
 }
